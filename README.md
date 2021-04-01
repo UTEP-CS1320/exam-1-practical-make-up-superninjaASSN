@@ -1,3 +1,4 @@
+[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=4486763&assignment_repo_type=AssignmentRepo)
 # Exam 1: Practical (Make-Up)
 
 This Practical Exam has three problems. These are found inside an if statement, used to select each problem. Below you will find the description of what you have to do for each problem, as well as the grading rubric for each.
