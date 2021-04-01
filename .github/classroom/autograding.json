@@ -1,0 +1,224 @@
+{
+  "tests": [
+    {
+      "name": "Stage 2 Hypertension",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "1 140 70",
+      "output": "Stage 2 Hypertension",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Pressure Error",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "1 100 120",
+      "output": "ERROR",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Normal",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "1 100 70",
+      "output": "Normal",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Stage 1 Hypertension",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "1 100 80",
+      "output": "Stage 1 Hypertension",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Elevated",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "1 120 70",
+      "output": "Elevated",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Hypertensive Crysis",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "1 130 120",
+      "output": "Hypertensive Crysis",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Names Test",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "2 Charizard 50 Ember 20 40 20 1",
+      "output": "Charizard used Ember",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Damage Calc Test 1",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "2 Charizard 50 Ember 20 40 20 0.25",
+      "output": "4 Damage",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Damage Calc Test 2",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "2 Bulbasaur 50 Slash 20 200 50 1",
+      "output": "37 Damage",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Damage Calc Test 3",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "2 Charizard 1 Ember 75 100 40 4",
+      "output": "44 Damage",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "No Effect Test",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "2 Charizard 1 Ember 20 20 40 0",
+      "output": "no effect",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Not Very Effective Test",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "2 Charizard 50 Ember 20 40 20 0.25",
+      "output": "not very effective",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Super Effective Test",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "2 Charizard 1 Ember 75 100 40 4",
+      "output": "super effective",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Damage Calc Test 4",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "2 Charizard 100 Pound 130 100 50 1",
+      "output": "220 Damage",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Invalid Input",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "2 Bulbasaur 101 Ember 19 40 20 1",
+      "output": "INVALID",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Store 1",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "3 1 Chips",
+      "output": "2.99",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Store 2",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "3 1 Chips",
+      "output": "3.2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Store 3",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "3 3 Gum Candy Soda",
+      "output": "5.3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Store 4",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "3 0",
+      "output": "0.0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Store 5 (Total)",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "3 4 Chips Chips Gum Gum",
+      "output": "7.96",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Store 6 (Tax)",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "3 4 Chips Chips Gum Gum",
+      "output": "0.7",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Store 7 (Tax + Total)",
+      "setup": "rm -f main ; clang -pthread -lm -o main main.c;",
+      "run": "./main",
+      "input": "3 4 Chips Chips Gum Gum",
+      "output": "8.7",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
